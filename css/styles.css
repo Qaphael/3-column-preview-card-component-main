@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: hsl(31, 100%, 94.17%, 1);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 20px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+ }
+
+ .container {
+   width: 180px;
+   height: 330px;
+   padding: 30px;
+ }
+
+ .content {
+   margin-bottom: 50px;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   font-weight: normal;
+   font-size: 13px;
+   opacity: .7;
+
+
+ }
+
+ .btn {
+   border-style: none;
+   background-color: white;
+   padding: 15px 25px 15px 25px;
+   border-radius: 50px;
+   cursor: pointer;
+   /* margin-bottom: 20px; */
+ }
+
+ .btn:hover {
+   background-color: rgba(0, 0, 0, 0);
+   border: 2px solid white;
+   color: white;
+ }
+
+ .header {
+   font-family: 'Bebas Neue', cursive;
+   text-transform: uppercase;
+   color: white;
+   font-weight: normal;
+ }
+
+ img {
+   width: 50px;
+ }
+
+ .sedans-btn {
+   color: var(--bright-orange);
+ }
+
+ .suvs-btn {
+   color: var(--dark-cyan);
+ }
+
+ .luxury-btn {
+   color: var(--very-dark-cyan);
+ }
+
+ .every-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .sedans-container {
+    background: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+ }
+
+ .suvs-container {
+    background: var(--dark-cyan);
+ }
+
+ .luxury-container {
+    background: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+ }
+
+
+ @media (max-width: 750px) {
+   body {
+     justify-content: space-around;
+     margin: 50px auto 50px auto;
+     height: 100%;
+   }
+   .every-box {
+     display: flex;
+     flex-flow: column;
+   }
+
+   .sedans-container {
+      border-radius: 10px 10px 0 0;
+   }
+
+   .luxury-container {
+      border-radius: 0 0 10px 10px;
+   }
+
+@media (max-width: 375px) {
+  .every-box {
+    display: flex;
+    flex-flow: column;
+  }
+
+}
+
+}
